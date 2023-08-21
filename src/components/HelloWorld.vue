@@ -1,17 +1,7 @@
 <script lang="ts" setup>
-const items = [
-    'a',
-    'a',
-    'a',
-    'a',
-    'a',
-    'a',
-    'a',
-    'a',
-    'a',
-    'a',
-    'abc'
-]
+const items = Array.from({ length: 100 }, () =>
+  Math.random().toString(36).substring(7)
+);
 </script>
 <template>
   <v-app>
